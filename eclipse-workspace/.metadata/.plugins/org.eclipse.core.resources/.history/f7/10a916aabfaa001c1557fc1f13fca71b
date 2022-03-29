@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Validation
+{
+	public static void main(String[] args) 
+	{
+	Scanner sc=new Scanner(System.in);
+	System.out.println("How many mails you want to store");
+	int n=sc.nextInt();
+	String s[]=new String[n];
+	for(int i=0;i<n;i++)
+	{
+		s[i]=sc.nextLine();
+	}
+	System.out.println("Enter email you want to search");
+	String str=sc.next();
+	for(String x:s)
+	{
+		if(x.equals(str))
+		{
+			System.out.println("Email found");
+		}
+		else
+		{
+			System.out.println("Not found");
+		}
+	}
+	
+	}
+
+}
