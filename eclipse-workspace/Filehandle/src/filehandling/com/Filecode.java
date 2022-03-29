@@ -20,7 +20,7 @@ public class Filecode {
 		{
 			System.out.println("Enter a text to be written to a file");
 			String text=sc.nextLine();
-			FileWriter fWriter = new FileWriter("D:\\ecllipse codes\\handlingdemo.txt");
+			FileWriter fWriter = new FileWriter("D:\\handlingdemo.txt");
 			fWriter.write(text);
 			fWriter.close();
 			System.out.println("File with data given has been written successfully");
@@ -28,7 +28,7 @@ public class Filecode {
 		}
 		case 'r':
 		{
-			FileReader fr=new FileReader("D:\\ecllipse codes\\handlingdemo1.txt");
+			FileReader fr=new FileReader("D:\\handlingdemo2.txt");
 			int i;
 			while((i=fr.read())!=-1)
 			System.out.print((char)i);
@@ -37,7 +37,7 @@ public class Filecode {
 		}
 		case 'a':
 		{
-			PrintWriter pw=new PrintWriter("D:\\ecllipse codes\\handlingdemo1.txt");
+			PrintWriter pw=new PrintWriter("D:\\\\handlingdemo2.txt");
 		     
 			pw.append('s');
 			System.out.println("file AFTER APPENDED");
